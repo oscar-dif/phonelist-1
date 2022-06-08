@@ -51,6 +51,11 @@ while True: ## REPL - Read Execute Program Loop
         print("Phone list saved!")
     elif cmd == "QUIT":
         save_phonelist(conn)
-        exit()
+    elif cmd == "HELP":
+        print("""Hello and welcome to the phone list, available commands:
+        add    - add a phone number
+        delete - delete a contact
+        list   - list all phone numbers
+        quit   - quit the program""")
     else:
         print("Unknown command")
